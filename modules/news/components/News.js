@@ -49,9 +49,9 @@ class News extends React.Component {
 
     return (
       <div>
-        <Carousel>
+        {/* <Carousel>
           { carouselItems }
-        </Carousel>
+        </Carousel> */}
         <div className="container">
           <div className="row">
             { this.props.user && this.props.user.id !== 0
