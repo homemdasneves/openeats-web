@@ -12,3 +12,4 @@ build/
 *.js.map
 *.log
 *.pyc
+/apache-conf/*
