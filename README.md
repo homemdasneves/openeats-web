@@ -52,3 +52,15 @@ docker-compose up node
 ```
 
 This will generate all the require files in the public folder. These files can be copied directly into the demo repo.
+
+
+# openeats-web setup without docker
+- install node js if needed (or even better, install nvm, and then install node - working version: 12.10.0)
+- install npm if needed (working version 6.10.3)
+- set NODE_ENV, and NODE_LOCALE environment variables - CASE SENSITIVE (ex: as development, and en)
+```
+npm install
+npm run build
+```
+- then the build dir can be served as a static website
+- note: npm start won't work because of the %PUBLIC_URL% in the assets path
