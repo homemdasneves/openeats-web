@@ -13,3 +13,4 @@ build/
 *.log
 *.pyc
 /apache-conf/*
+apache_error_logs

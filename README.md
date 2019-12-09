@@ -59,8 +59,12 @@ This will generate all the require files in the public folder. These files can b
 - install npm if needed (working version 6.10.3)
 - set NODE_ENV, and NODE_LOCALE environment variables - CASE SENSITIVE (ex: as development, and en)
 ```
+source ~/.profile
 npm install
-npm run build
+npm run build:dev // for development
+npm run build // for production
 ```
+- note: the profile may need to be sourced for the path to be updated so that the nvm command is available
+
 - then the build dir can be served as a static website
 - note: npm start won't work because of the %PUBLIC_URL% in the assets path
